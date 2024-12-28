@@ -293,7 +293,7 @@ var _sssa = (function(root) {
         for (i in secret) {
             polynomial.push([secret[i]]);
             for (j = 1; j < minimum; j++) {
-                value = utils.random();
+                let value = utils.random();
                 while (value in numbers) {
                     value = utils.random();
                 }
@@ -306,7 +306,7 @@ var _sssa = (function(root) {
 
         for (i = 0; i < shares; i++) {
             for (j in secret) {
-                value = utils.random();
+                let value = utils.random();
                 while (value in numbers) {
                     value = utils.random();
                 }
